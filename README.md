@@ -33,7 +33,7 @@ graphics.off()
 
 ################################ SUBROUTINES ################################
 
-rbftrain = function(x,y,clusters,learn,epochs,mMSE,activ){
+rbftrain = function(x,y,clusters,learn,epochs,mMSE,activ) {
 # RBFTRAIN    trains a radial basis function neural network
 #
 # ---------------------------------------------------------------------
