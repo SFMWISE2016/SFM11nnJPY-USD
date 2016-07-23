@@ -31,7 +31,7 @@ Example: 'Plots the real exchange rate JPY/USD (red) versus its approximation th
 rm(list=ls(all=TRUE))
 graphics.off()
 
-################################ SUBROUTINES ################################
+#SUBROUTINES
 
 rbftrain = function(x,y,clusters,learn,epochs,mMSE,activ) {
 # RBFTRAIN    trains a radial basis function neural network
@@ -351,7 +351,7 @@ return(netOut)
 }
 
 
-################################ MAIN PROGRAM ################################
+#MAIN PROGRAM 
   set.seed(78) 
   x <- read.csv("dat.csv",header= T)
   #View(x)
