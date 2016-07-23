@@ -15,7 +15,7 @@ Keywords: approximation, data visualization, exchange-rate, financial, forecast,
 
 Author: SFEwise2016.Group9
 
-Submitted: Wed, July 20 2016 by quantomas
+Submitted: Wed, July 20 2016 
 
 Datafiles: dat.csv
 
