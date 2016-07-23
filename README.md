@@ -19,12 +19,11 @@ Submitted: Wed, July 20 2016 by quantomas
 
 Datafiles: dat.csv
 
+Example: 'Plots the real exchange rate JPY/USD (red) versus its approximation through RBF neural network (blue): training set(above) and forecasts(below).'
+
 ```
 
 ![Picture1](picture.png)
 
 
 ```r
-
-
-Example: 'Plots the real exchange rate JPY/USD (red) versus its approximation through RBF neural network (blue): training set(above) and forecasts(below).'
