@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage{graphicx}
+\begin{document}
+\begin{center}
+Approximation of JPY/USD exchange rate by RBF neural networks\\
+\begin{center}
+Group ID:11
+\end{center}\\
+\begin{center}
+•Topic ID:9
+\end{center}\\
+\begin{flushleft}
+•1.Introduction
+\end{flushleft}\\
+Neural network is able to approach any functions infinitely in theory .And there is a good effect in forecasting field with neural network .With the ability of numeric approaching and memory , it can identify the inherence pattern of exchange rate sequence according to the historic data.At the beginning.
+\begin{flushleft}
+2.Data source
+\end{flushleft}
+Data selection, first of all, to determine the data sampling rules based on time series, extract the relevant data from the original data of the database as a sample or forecast data. Data selection includes training sample selection and prediction data selection, the two are different from the prediction data selection process only select the network input data and the sample selection and output data.We get the forward exchange data,spot exchange rate from wind.\\
+\begin{flushleft}
+•3.Procedure
+\end{flushleft}
+The choice of the original data need to be processed into a neural network processing in the form of data preprocessing will be reduced to a specific range of data,$\left[ -1,1\left]$ and $\left[ 0,1\left]$ is commonly used in the specification range. The predictor allows users to choose through the visual interface. According to the expert guidance and in the actual test and comparison, we in the experiment of the original data are mapped to the $\left[ 0,1\left]$ range.\\
+\begin{flushleft}
+4.Plots
+\end{flushleft}
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.5]{picture.png}
+\end{figure}
+
+\end{document}
