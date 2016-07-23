@@ -27,3 +27,33 @@ Example: 'Plots the real exchange rate JPY/USD (red) versus its approximation th
 
 
 ```r
+rm(list=ls(all=TRUE))
+graphics.off()
+
+################################ SUBROUTINES ################################
+
+rbftrain = function(x,y,clusters,learn,epochs,mMSE,activ){
+# RBFTRAIN    trains a radial basis function neural network
+#
+# ---------------------------------------------------------------------
+# Usage       {inp,net,err} = rbftrain(x,y,clusters,learn,epochs,mMSE{,activ})
+# ---------------------------------------------------------------------
+# Input       
+# Parameter   x
+# Definition  (n x p) matrix, predictor variables
+# Parameter   y
+# Definition  (n x q) matrix, response variables
+# Parameter   clusters
+# Definition  scalar, number of clusters to be built in the hidden layer
+# Parameter   learn
+# Definition  (3 x 1) vector, minimum learning rate and maximum learning rate
+#             for building the clusters respectively, learn[3] is the learning
+#             rate for training the output layer. learn must be from (0,1)
+# Parameter   epochs
+# Definition  (2 x 1) vector, number of epochs to train the cluster and output
+#             units respectively
+# Parameter   mMSE
+# Definition  scalar, minimum value of the mean squared error to stop the training
+# Parameter   activ
+# Definition  optional scalar, 0 for binary (default) or 1 for bipolar activation sigmoid function.
+# ---------------------------------------------------------------------
